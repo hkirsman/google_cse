@@ -6,7 +6,7 @@
 <?php endif; ?>
 
 <?php if ($results_searchbox_form): ?>
-  <?php print render($results_searchbox_form); ?>
+  <?php /*print render($results_searchbox_form);*/ ?>
 <?php endif; ?>
 
 <div id="google-cse-results">
@@ -14,6 +14,8 @@
     <?php print $noscript; ?>
   </noscript>
 </div>
+
+<div id="cse" style="width: 100%;">Loading</div>
 
 <?php if ($suffix): ?>
   <div class="google-cse-results-suffix"><?php print $suffix; ?></div>
